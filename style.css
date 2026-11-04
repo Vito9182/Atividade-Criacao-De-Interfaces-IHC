@@ -1,0 +1,73 @@
+/*codigo para tirar as margens do navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------------------------------------*/
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #221a57;
+    background-image: url("https://img.magnific.com/vetores-gratis/particle-de-tecnologia-abstrata-realista-de-fundo_23-2148431735.jpg?semt=ais_hybrid&w=740&q=80"),
+    linear-gradient(135deg, #221a57, #6a5fd1);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*------------------------------------*/
+
+.cabecalho {
+    padding: 16px 24px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    /*--efeito de desfoque/transparente--*/
+    background: rgba(59, 47, 143, 0.55);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.cabecalho.texto {
+    color:#ffffff;
+    font-size: 1.3rem;
+}
+
+/*------------------------------------*/
+
+/*parte principal aqui*/
+.conteudo {
+    flex: 1;
+}
+
+/*------------------------------------*/
+
+.rodape {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 20px 24px;
+    color:#ffffff;
+
+    /*efeito transparente igual o cabeçalho*/
+    background: rgba(59, 47, 143, 0.55);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.rodape p {
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
