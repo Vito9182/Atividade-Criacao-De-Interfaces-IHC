@@ -43,11 +43,96 @@ body {
     font-size: 1.3rem;
 }
 
+.botao-menu {
+    width: 50px;
+    height: 42px;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.botao-menu span {
+    display: block;
+    height: 4px;
+    background: #ffffff;
+    border-radius: 2px;
+}
+
 /*------------------------------------*/
 
-/*parte principal aqui*/
 .conteudo {
     flex: 1;
+    width: 90%;
+    max-width: 950px;
+    margin: 40px auto;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+
+    background:#f4f3fb;
+    border-left: 4px solid #3b2f8f;
+    border-right: 4px solid #3b2f8f;
+    border-radius: 12px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.card-tema {
+    flex: 0 0 230px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 4px solid #3b2f8f;
+}
+
+.card-texto {
+    flex: 1;
+}
+
+.card-texto h3{
+    font-size: 1.6rem;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.card-texto p {
+    line-height: 1.6;
+    margin-bottom: 16px;
+}
+
+.btn-saiba {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 8px 48px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #3b2f8f;
+    border: 1px solid #3b2f8f;
+    border-radius: 4px;
+    transition: 0.2s;
+}
+
+
+.btn-saiba:hover {
+    background: #3b2f8f;
+    color: #ffffff;
 }
 
 /*------------------------------------*/
