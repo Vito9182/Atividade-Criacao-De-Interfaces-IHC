@@ -135,6 +135,16 @@ body {
     text-transform: uppercase;
 }
 
+.logo a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.logo a:hover {
+    opacity: 0.5;
+}
+
 
 /*------------------------------------*/
 
@@ -239,3 +249,18 @@ body {
     font-size: 1.2rem;
     text-transform: uppercase;
 }
+
+.btn-creditos {
+    justify-self: start;
+    padding: 6px 18px;
+    color: #ffffff;
+    text-decoration: none;
+    border: 2px solid #ffffff;
+    border-radius: 6px;
+    transition: 0.2s;
+}
+
+.btn-creditos:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
