@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,20 +9,36 @@
 <body>
 
     <header class="cabecalho">
-        <button class="botao-menu">
+    <div class="menu">
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <div class = "menu-botao">
+        <label for="menu-toggle" class="botao-menu">
             <span></span>
             <span></span>
             <span></span>
-            <span> </span>
-        </button>
+            <span></span>
+        </label>
         <span class="cabecalho-texto">Menu</span>
+    </div>
+
+        <ul class="menu-lista">
+            <li><a href="#usabilidade">Usabilidade</a></li>
+            <li><a href="#ux">UX</a></li>
+            <li><a href="#acessibilidade">Acessibilidade</a></li>
+            <li><a href="#responsividade">Responsividade</a></li>
+        </ul>
+    </div>
+
+    <h1 class = "logo">Criação de Interfaces</h1>
+    <div></div>
     </header>
 
     <main class="conteudo">
+
        <!-- tema 1 --> 
-        <section class="card">
+        <section class="card" id="usabilidade">
             <div class = "card-tema">
-                <h2>Usabilidade</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEgo1wINq0tmidfS-IMwSDtIb7RT1Fy2eZQ4mO934F5g&s=10" alt="Usabilidade">
             </div>
             <div class = "card-texto">
                 <h3>Usabilidade</h3>
@@ -34,12 +50,12 @@
         </section>
 
         <!-- tema 2 --> 
-        <section class="card">
+        <section class="card" id="ux">
             <div class = "card-tema">
-                <h2>UX</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk0JBqu5JgTyx_Gqurt-zL__vPsR8U4DUgQHFAwaKS1A&s=10" alt="UX">
             </div>
             <div class = "card-texto">
-                <h3>User Experience(UX)</h3>
+                <h3>Experiência do Usuário</h3>
                 <p>
                     lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nisl nec ultricies lacinia, nunc nisl aliquam nunc, eget aliquam nisl nunc vel nisl. Sed euismod, nisl nec ultricies lacinia, nunc nisl aliquam nunc, eget aliquam nisl nunc vel nisl.
                 </p>
@@ -48,9 +64,9 @@
         </section>
 
         <!-- tema 3 --> 
-        <section class="card">
+        <section class="card" id="acessibilidade">
             <div class = "card-tema">
-                <h2>Acessibilidade</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRApmhd46pKyUNcleSlIEzEgvegjgvF5YK_4dqlIsoBVg&s=10" alt="Acessibilidade">
             </div>
             <div class = "card-texto">
                 <h3>Acessibilidade</h3>
@@ -62,9 +78,9 @@
         </section>
 
         <!-- tema 4 --> 
-        <section class="card">
+        <section class="card" id="responsividade">
             <div class = "card-tema">
-                <h2>Responsividade</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe6-RdptdYEfJL7z0neyJDpIYPBVQl_SdCKKFJAWa6Gg&s=10" alt="Responsividade">
             </div>
             <div class = "card-texto">
                 <h3>Responsividade</h3>
