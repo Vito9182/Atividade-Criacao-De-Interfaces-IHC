@@ -25,3 +25,56 @@
     margin-bottom: 6px;
     color: #c9c3ff;
 }
+
+/* HEURISTICAS */
+
+.secao {
+    padding: 24px;
+    background: #3b2f8f;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+    color: #ffffff;
+}
+
+secao h2 {
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    color: #c9c3ff;
+}
+
+secao-intro {
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.heuristica {
+    display: flex;
+    gap: 14px;
+    padding: 16px;
+    background: #2a2170;
+    border-radius: 10px;
+}
+
+.heuristica h3 {
+    font-size: 1rem;
+    margin-bottom: 4px;
+}
+
+.heuristica p {
+    font-size: 0.92rem;
+    line-height: 1.5;
+    color: #e4e1ff;
+}
+
+/* bolinha */
+.numero {
+    flex: 0 0 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #6a5fd1;
+    font-weight:700;
+}
