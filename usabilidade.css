@@ -2,7 +2,7 @@
     font-size: 2.5rem;
     margin-bottom: 10px;
     text-transform: uppercase;
-    color: #c9c3ff,
+    color: #c9c3ff;
 }
 
 .pilares {
@@ -36,19 +36,29 @@
     color: #ffffff;
 }
 
-secao h2 {
+.secao h2 {
     font-size: 1.6rem;
     margin-bottom: 6px;
     text-transform: uppercase;
     color: #c9c3ff;
+    text-align: center;
 }
 
-secao-intro {
+.secao-intro {
     line-height: 1.6;
     margin-bottom: 18px;
+    text-align: center;
+}
+
+.heuristicas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
 }
 
 .heuristica {
+    flex: 0 1 270px;
     display: flex;
     gap: 14px;
     padding: 16px;
@@ -76,7 +86,7 @@ secao-intro {
     justify-content: center;
     border-radius: 50%;
     background: #6a5fd1;
-    font-weight:700;
+    font-weight: 700;
 }
 
 
