@@ -169,6 +169,14 @@ h1, h2, h3 {
     color: #4cc9f0;
 }
 
+.menu-lista ul a[aria-current="page"] {
+    background: rgba(76, 201, 240, 0.12);
+}
+
+.menu-lista ul a[aria-current="page"] span {
+    color: #4cc9f0;
+}
+
 .logo {
     display: inline-flex;
     align-items: center;
