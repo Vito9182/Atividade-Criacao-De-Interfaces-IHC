@@ -12,7 +12,7 @@ html {
 /*------------------------------------*/
 
 body {
-    color: #2a2a3d;
+    color: #ffffff;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -25,6 +25,10 @@ body {
     background-attachment: fixed;
 
     font-family: "Segoe UI", Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Poppins", "Segoe UI", sans-serif;
 }
 
 /*------------------------------------*/
@@ -145,6 +149,83 @@ body {
     opacity: 0.5;
 }
 
+/*------------------------------------*/
+
+.botao-principal {
+    display: inline-block;
+    padding: 14px 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius:6px;
+    transition:0.2s;
+}
+
+.botao-principal {
+    color: #0d1a3f;
+    background: #4cc9f0;
+}
+
+.botao-principal:hover {
+    background: #ffffff;
+}
+
+
+/*------------------------------------*/
+/* nova abertura */
+.inicio {
+    width: cacl(100% - 32px);
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 80px 0 64px;
+    display: felx;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 48px;
+}
+
+.inicio-texto {
+    flex: 999 1 440px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.selo {
+    width: fit-content;
+    padding: 4px 14px;
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #4cc9f0;
+    border: 1px solid #4cc9f0;
+    border-radius: 20px;
+}
+
+.inicio-titulo {
+    font-size: 3.4rem;
+    font-weight: 800;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.inicio-titulo span {
+    color: #4cc9f0;
+}
+
+.inicio-descricao {
+    max-width: 520px;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: #e4e1ff;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
 
 /*------------------------------------*/
 
