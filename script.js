@@ -11,7 +11,6 @@ function abrirFecharMenu(abrir) {
     botaoMenu.classList.toggle('aberto', abrir);
     botaoMenu.setAttribute('aria-expanded', abrir);
     botaoMenu.setAttribute('aria-label', abrir ? 'Fechar menu' : 'Abrir menu');
-    document.body.classList.toggle('sem-rolagem', abrir);
 }
 
 // clicar no botão abre se estiver fechado, e fecha se estiver aberto
