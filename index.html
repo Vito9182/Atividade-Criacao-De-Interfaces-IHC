@@ -34,7 +34,7 @@
 
         <header class="cabecalho">
             <a href="index.html" class="logo">
-                <span class="logo-icone" aria-hidden="true">CI</span>
+                <span class="logo-icone" aria-hidden="true">IHC</span>
                 <span class="logo-texto">
                     <span class="logo-pequeno">Criação de</span>
                     <span class="logo-grande">Interfaces</span>
@@ -56,22 +56,22 @@
         
         
         <div class="tema-cartoes" aria-hidden="true">
-                <div class="tema-cartao cartao-vidro">
+                <a href="#usabilidade" class="tema-cartao cartao-vidro">
                     <img src="icons/pointer.png" alt="">
                     <p>Usabilidade</p>
-                </div>
-                <div class="tema-cartao cartao-ciano">
+                </a>
+                <a href="#ux" class="tema-cartao cartao-ciano">
                     <img src="icons/heart.png" alt="">
                     <p>Experiência</p>
-                </div>
-                <div class="tema-cartao cartao-roxo">
+                </a>
+                <a href="#acessibilidade" class="tema-cartao cartao-roxo">
                     <img src="icons/user.png" alt="">
                     <p>Acessibilidade</p>
-                </div>
-                <div class="tema-cartao cartao-vidro">
+                </a>
+                <a href="#responsividade" class="tema-cartao cartao-vidro">
                     <img src="icons/pc.png" alt="">
                     <p>Responsividade</p>
-                </div>
+                </a>
             </div>
         </div>
     </section>
@@ -91,7 +91,7 @@
         </div>
 
         <!-- tema 1 --> 
-        <a href="usabilidade.html" class="passo">
+        <a href="usabilidade.html" class="passo" id="usabilidade">
             <span class = "passo-numero">01</span>
             <img class="passo-imagem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEgo1wINq0tmidfS-IMwSDtIb7RT1Fy2eZQ4mO934F5g&s=10" alt="Pessoas analisando a interface de um site">
             <div class = "passo-texto">
@@ -104,7 +104,7 @@
         </a>
 
         <!-- tema 2 --> 
-        <a href="ux.html" class="passo">
+        <a href="ux.html" class="passo" id="ux">
             <span class="passo-numero">02</span>
             <img class="passo-imagem" src="#" alt="Colocar Imagem UX aqui">
             <div class="passo-texto">
@@ -115,7 +115,7 @@
         </a>
 
         <!-- tema 3 --> 
-        <a href="acessibilidade.html" class="passo">
+        <a href="acessibilidade.html" class="passo" id="acessibilidade">
             <span class="passo-numero">03</span>
             <img class="passo-imagem" src="#" alt="Colocar Imagem Acessibilidade aqui">
             <div class="passo-texto">
@@ -126,7 +126,7 @@
         </a>
 
         <!-- tema 4 --> 
-        <a href="responsividade.html" class="passo">
+        <a href="responsividade.html" class="passo" id="responsividade">
             <span class="passo-numero">04</span>
             <img class="passo-imagem" src="#" alt="Colocar Imagem responsividade aqui">
             <div class="passo-texto">
@@ -136,6 +136,68 @@
             <span class="passo-seta" aria-hidden="true">→</span>
         </a>
     </main>
+
+    <section class="conexao">
+        <div class="conexao-texto">
+            <h2>Como os quatro se conectam</h2>
+            <p>
+                Os quatro conceitos não funcionam sozinhos. Um site que funciona no celular mas é confuso continua ruim,
+                e um site bonito que o leitor de tela não entende deixa pessoas de fora.
+            </p>
+        </div>
+
+        <div class="perguntas">
+            <div class="pergunta">
+                <span>Usabilidade</span>
+                <p>Consegue usar?</p>
+            </div>
+            <div class="pergunta">
+                <span>Experiência</span>
+                <p>Gostou de usar?</p>
+            </div>
+            <div class="pergunta">
+                <span>Acessibilidade</span>
+                <p>Todo mundo consegue?</p>
+            </div>
+            <div class="pergunta">
+                <span>Responsividade</span>
+                <p>Funciona em qualquer tela?</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="aplica">
+        <h2>Este site aplica o que ensina</h2>
+        <p class="aplica-intro">Cada conceito aparece em algum detalhe destas páginas.</p>
+
+        <div class="aplica-grade">
+            <article class="aplica-cartao">
+                <span class="aplica-numero">01</span>
+                <h3>Usabilidade</h3>
+                <p>O botão de menu fica sempre no mesmo lugar, e o caminho "Início › Tema" mostra em que página você está.</p>
+                <p class="aplica-onde">Veja: o botão redondo no canto da tela</p>
+            </article>
+            <article class="aplica-cartao">
+                <span class="aplica-numero">02</span>
+                <h3>Experiência</h3>
+                <p>Animações suaves nos botões e cartões, e um quiz na página de Usabilidade, deixam a navegação mais agradável.</p>
+                <p class="aplica-onde">Veja: passe o mouse nos cartões do topo</p>
+            </article>
+            <article class="aplica-cartao">
+                <span class="aplica-numero">03</span>
+                <h3>Acessibilidade</h3>
+                <p>As imagens têm descrição, o texto tem bom contraste e o menu avisa o leitor de tela quando abre e fecha.</p>
+                <p class="aplica-onde">Veja: o menu também fecha com a tecla Esc</p>
+            </article>
+            <article class="aplica-cartao">
+                <span class="aplica-numero">04</span>
+                <h3>Responsividade</h3>
+                <p>Os blocos usam flexbox e grid, que se reorganizam sozinhos quando a tela fica menor.</p>
+                <p class="aplica-onde">Veja: diminua a largura da janela</p>
+            </article>
+        </div>
+    </section>
+
 
     <section class="chamada">
         <h2>Por onde começar?</h2>
