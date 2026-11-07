@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Criação de Interfaces</title>
-        <!--preconnect adianta a conexão pra fonte carregar mais rápido-->
+    <!--preconnect adianta a conexão pra fonte carregar mais rápido-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <!--fonte Poppins do Google Fonts, usada nos títulos-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
@@ -12,60 +12,66 @@
 </head>
 <body>
 
-    <header class="cabecalho">
-    <div class="menu">
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <div class = "menu-botao">
-        <label for="menu-toggle" class="botao-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-        <span class="cabecalho-texto">Menu</span>
-    </div>
+    <button class="botao-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-lista">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
-        <ul class="menu-lista">
-            <li><a href="usabilidade.html">Usabilidade</a></li>
-            <li><a href="ux.html">UX</a></li>
-            <li><a href="acessibilidade.html">Acessibilidade</a></li>
-            <li><a href="responsividade.html">Responsividade</a></li>
+    <nav class="menu-lista" id="menu-lista" aria-label="Menu principal">
+        <ul>
+            <li><a href="usabilidade.html"><span>01</span>Usabilidade</a></li>
+            <li><a href="ux.html"><span>02</span>Experiência do Usuário</a></li>
+            <li><a href="acessibilidade.html"><span>03</span>Acessibilidade</a></li>
+            <li><a href="responsividade.html"><span>04</span>Responsividade</a></li>
         </ul>
-    </div>
+    </nav>
 
-     <h1 class="logo"><a href="index.html">Criação de Interfaces</a></h1>
-    <div></div>
-    </header>
+    <div class="menu-fundo"></div>
 
         <!-- nova aparencia-->
     <section class = "inicio">
-        <div class="inicio-texto">
-            <p class ="selo">Atividade IHC / 2026</p>
-            <h2 class="inicio-titulo">Interfaces feitas <span> para pessoas</span></h2>
-            <p class= "inicio-descricao">
-                Um guia sobre os quatro conceitos que separam um site confuso de um site que qualquer pessoa consegue usar.
-            </p>
-            <div class="botoes">
-                <a href="#" class="botao-principal">Ver os temas</a>
-            </div>
-        </div>
 
-        <div class="tema-cartoes">
-            <div class="tema-cartao cartao-vidro">
-                <img src="icons/pointer.png" alt="">
-                <p>Usabilidade</p>
+        <header class="cabecalho">
+            <a href="index.html" class="logo">
+                <span class="logo-icone" aria-hidden="true">CI</span>
+                <span class="logo-texto">
+                    <span class="logo-pequeno">Criação de</span>
+                    <span class="logo-grande">Interfaces</span>
+                </span>
+            </a>
+        </header>
+
+        <div class="inicio-conteudo">
+            <div class="inicio-texto">
+                <p class="selo">Atividade IHC / 2026</p>
+                <h1 class="inicio-titulo">Interfaces feitas <span>para pessoas</span></h1>
+                <p class="inicio-descricao">
+                    Um guia sobre os quatro conceitos que separam um site confuso de um site que qualquer pessoa consegue usar.
+                </p>
+                <div class="botoes">
+                    <a href="#temas" class="botao-principal">Ver os temas</a>
+                </div>
             </div>
-            <div class="tema-cartao cartao-ciano">
-                <img src="icons/heart.png" alt="">
-                <p>Experiência</p>
-            </div>
-            <div class="tema-cartao cartao-roxo">
-                <img src="icons/user.png" alt="">
-                <p>Acessibilidade</p>
-            </div>
-            <div class="tema-cartao cartao-vidro">
-                <img src="icons/pc.png" alt="">
-                <p>Responsividade</p>
+        
+        
+        <div class="tema-cartoes" aria-hidden="true">
+                <div class="tema-cartao cartao-vidro">
+                    <img src="icons/pointer.png" alt="">
+                    <p>Usabilidade</p>
+                </div>
+                <div class="tema-cartao cartao-ciano">
+                    <img src="icons/heart.png" alt="">
+                    <p>Experiência</p>
+                </div>
+                <div class="tema-cartao cartao-roxo">
+                    <img src="icons/user.png" alt="">
+                    <p>Acessibilidade</p>
+                </div>
+                <div class="tema-cartao cartao-vidro">
+                    <img src="icons/pc.png" alt="">
+                    <p>Responsividade</p>
+                </div>
             </div>
         </div>
     </section>
@@ -78,7 +84,7 @@
         <span>Adaptação</span>
     </div>
 
-    <main class="conteudo">
+    <main class="conteudo" id="temas">
 
        <!-- tema 1 --> 
         <section class="card" id="usabilidade">
@@ -143,6 +149,7 @@
         <p>Atividade IHC<br>2026</p>
     </footer>
 
+    <script src="script.js"></script>
     
 </body>
 </html>
