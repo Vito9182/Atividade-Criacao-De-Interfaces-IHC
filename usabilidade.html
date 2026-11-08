@@ -67,8 +67,14 @@
     </div>
     </section>
 
+    <nav class="faixa" aria-label="Seções da página">
+        <a href="#heuristicas">Heurísticas</a><span aria-hidden="true">✦</span>
+        <a href="#exemplos">Exemplos</a><span aria-hidden="true">✦</span>
+        <a href="#quiz">Teste rápido</a>
+    </nav>
+
     <main class="conteudo">
-        <section class="secao">
+        <section class="secao" id="heuristicas">
             <h2>As 10 heurísticas de Nielsen</h2>
             <p class = "secao-intro">
                 Regras práticas criadas por Jakob Nielsen em 1994. Clique em uma heurística pra ver um exemplo.
@@ -130,7 +136,7 @@
         </section>
 
         <!-- exemplo de site ruim -->
-        <section class="exemplos">
+        <section class="exemplos" id="exemplos">
             <div class="exemplo">
                 <div class="exemplo-imagem">
                     <img src="SiteBom.png" alt="Loja online organizada, com menu simples, busca e um botão principal">
@@ -156,7 +162,7 @@
         </section>
 
         <!-- quiz usando javascript-->
-        <section class="quiz">
+        <section class="quiz" id="quiz">
             <p class="quiz-contador">Teste rápido · <span id="quiz-numero">1</span> de 3</p>
             <h2 class="quiz-pergunta" id="quiz-pergunta"></h2>
             <div class="quiz-opcoes" id="quiz-opcoes"></div>
