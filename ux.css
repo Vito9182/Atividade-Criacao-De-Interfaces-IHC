@@ -1,0 +1,54 @@
+.ux-hero {
+    flex: 1 1 320px;
+    min-width: 280px;
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 32px;
+    border: 1px solid rgba(76, 201, 240, .6);
+    border-radius: 16px;
+    background: linear-gradient(145deg, rgba(106, 95, 209, .75), rgba(42, 33, 112, .9));
+    box-shadow: 0 16px 36px rgba(0, 0, 0, .4);
+    transform: rotate(2deg);
+}
+.ux-ponto {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0b1636;
+    background: #4cc9f0;
+    border-radius: 50%;
+    font: 800 1.4rem Poppins, sans-serif;
+}
+.ux-ponto:nth-of-type(3) { color: #fff; background: #6a5fd1; border: 1px solid #c9c3ff; }
+.ux-ponto:nth-of-type(5) { color: #fff; background: transparent; border: 1px solid #4cc9f0; }
+.ux-linha { width: 36px; height: 2px; background: #4cc9f0; }
+.jornada {
+    display: grid;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 30px;
+    padding: 28px;
+    background: #3b2f8f;
+    border: 1px solid rgba(76, 201, 240, .5);
+    border-radius: 12px;
+}
+.jornada h2 { margin: 4px 0 10px; }
+.jornada p { color: #e4e1ff; line-height: 1.6; }
+.selo { color: #4cc9f0 !important; text-transform: uppercase; letter-spacing: 2px; font-size: .8rem; }
+.jornada ol { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; list-style: none; }
+.jornada li { padding: 16px; display: flex; flex-direction: column; gap: 4px; color: #fff; background: #2a2170; border-radius: 10px; }
+.jornada li span { color: #4cc9f0; font: 800 .85rem Poppins, sans-serif; }
+.jornada li small { color: #c9c3ff; }
+.ux-exemplo { min-height: 170px; padding: 22px; display: flex; flex-direction: column; justify-content: center; gap: 10px; border-radius: 8px; }
+.ux-exemplo strong { font: 1.2rem Poppins, sans-serif; }
+.ux-positivo { color: #0b1636; background: linear-gradient(145deg, #c9f3ff, #4cc9f0); }
+.ux-negativo { color: #fff; background: linear-gradient(145deg, #7d273d, #30152f); }
+.ux-negativo span { color: #ffc6d1; }
+@media (max-width: 760px) {
+    .ux-hero { transform: none; }
+    .jornada { grid-template-columns: 1fr; }
+}

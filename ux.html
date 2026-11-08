@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiência do Usuário | Criação de Interfaces</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="usabilidade.css">
+    <link rel="stylesheet" href="ux.css">
+</head>
+<body>
+    <button class="botao-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-lista">
+        <span></span><span></span><span></span>
+    </button>
+    <nav class="menu-lista" id="menu-lista" aria-label="Menu principal">
+        <ul>
+            <li><a href="index.html"><span>00</span>Início</a></li>
+            <li><a href="usabilidade.html"><span>01</span>Usabilidade</a></li>
+            <li><a href="ux.html" aria-current="page"><span>02</span>Experiência do Usuário</a></li>
+            <li><a href="acessibilidade.html"><span>03</span>Acessibilidade</a></li>
+            <li><a href="responsividade.html"><span>04</span>Responsividade</a></li>
+        </ul>
+    </nav>
+    <div class="menu-fundo"></div>
+
+    <section class="inicio">
+        <header class="cabecalho">
+            <a href="index.html" class="logo">
+                <span class="logo-icone" aria-hidden="true">IHC</span>
+                <span class="logo-texto"><span class="logo-pequeno">Criação de</span><span class="logo-grande">Interfaces</span></span>
+            </a>
+        </header>
+        <div class="inicio-conteudo">
+            <div class="tema-texto">
+                <nav class="caminho" aria-label="Caminho"><a href="index.html">Início</a> <span aria-hidden="true">›</span> Experiência do Usuário</nav>
+                <div class="tema-titulo"><span class="tema-numero" aria-hidden="true">02</span><h1>Experiência do Usuário</h1></div>
+                <p class="tema-descricao">UX é tudo que uma pessoa sente e percebe ao interagir com um produto ou serviço, antes, durante e depois de realizar uma tarefa.</p>
+                <div class="etiquetas"><span class="etiqueta">Pesquisa</span><span class="etiqueta">Jornada</span><span class="etiqueta">Solução</span></div>
+            </div>
+            <div class="ux-hero" role="img" aria-label="Representação de uma jornada de experiência do usuário">
+                <span class="ux-ponto">1</span><span class="ux-linha"></span><span class="ux-ponto">2</span><span class="ux-linha"></span><span class="ux-ponto">3</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="conteudo">
+        <section class="secao">
+            <h2>Etapas de UX</h2>
+            <p class="secao-intro">Conheça um caminho para entender as pessoas e criar soluções melhores.</p>
+            <div class="heuristicas ux-etapas">
+                <details class="heuristica" open><summary><span class="numero">1</span>Descobrir</summary><p>Pesquisar e observar as pessoas para entender suas necessidades, objetivos e dificuldades.</p></details>
+                <details class="heuristica"><summary><span class="numero">2</span>Definir</summary><p>Organizar os aprendizados e definir qual problema realmente precisa ser resolvido.</p></details>
+                <details class="heuristica"><summary><span class="numero">3</span>Idear</summary><p>Gerar possibilidades de solução sem escolher a primeira ideia antes de comparar alternativas.</p></details>
+                <details class="heuristica"><summary><span class="numero">4</span>Prototipar</summary><p>Transformar uma ideia em uma versão simples para testar antes de desenvolver tudo.</p></details>
+                <details class="heuristica"><summary><span class="numero">5</span>Testar</summary><p>Observar pessoas usando a solução e descobrir o que precisa ser melhorado.</p></details>
+            </div>
+        </section>
+
+        <section class="destaque">
+            <p class="destaque-frase">A experiência começa antes do primeiro clique.</p>
+            <p class="destaque-fonte">UX considera o contexto, as expectativas e os sentimentos de quem usa.</p>
+        </section>
+
+        <section class="jornada" aria-labelledby="jornada-titulo">
+            <div>
+                <p class="selo">Jornada do usuário</p>
+                <h2 id="jornada-titulo">Do problema à solução</h2>
+                <p>A jornada mostra as etapas que uma pessoa percorre, o que ela faz e como se sente em cada momento.</p>
+            </div>
+            <ol>
+                <li><span>01</span><strong>Descobre</strong><small>Percebe uma necessidade</small></li>
+                <li><span>02</span><strong>Considera</strong><small>Compara possibilidades</small></li>
+                <li><span>03</span><strong>Usa</strong><small>Realiza sua tarefa</small></li>
+                <li><span>04</span><strong>Continua</strong><small>Decide se volta</small></li>
+            </ol>
+        </section>
+
+        <section class="exemplos">
+            <div class="exemplo">
+                <div class="exemplo-imagem ux-exemplo ux-positivo"><strong>Comprar ingresso</strong><span>Escolha a sessão</span><span>Selecione o lugar</span><span>Pagamento simples</span></div>
+                <h3>Boa experiência</h3>
+                <ul><li>O caminho mostra o que falta <span>(clareza)</span></li><li>A pessoa tem controle antes de confirmar <span>(confiança)</span></li><li>As informações aparecem no momento certo <span>(contexto)</span></li></ul>
+            </div>
+            <div class="exemplo exemplo-ruim">
+                <div class="exemplo-imagem ux-exemplo ux-negativo"><strong>Comprar ingresso</strong><span>Erro inesperado</span><span>Escolha novamente</span><span>Dados perdidos</span></div>
+                <h3>Experiência ruim</h3>
+                <ul><li>O sistema não explica o erro <span>(compreensão)</span></li><li>A tarefa precisa ser refeita <span>(frustração)</span></li><li>Não há segurança antes de confirmar <span>(controle)</span></li></ul>
+            </div>
+        </section>
+
+        <section class="quiz">
+            <p class="quiz-contador">Teste rápido · <span id="quiz-numero">1</span> de 3</p>
+            <h2 class="quiz-pergunta" id="quiz-pergunta"></h2>
+            <div class="quiz-opcoes" id="quiz-opcoes"></div>
+            <p class="quiz-resposta" id="quiz-resposta" aria-live="polite"></p>
+            <button class="quiz-proxima" id="quiz-proxima" hidden>Próxima →</button>
+        </section>
+
+        <nav class="navegacao-temas" aria-label="Navegar entre temas">
+            <a href="usabilidade.html" class="nav-tema"><span class="nav-tema-dica">← Tema anterior</span><span class="nav-tema-nome">01 · Usabilidade</span></a>
+            <a href="acessibilidade.html" class="nav-tema nav-proximo"><span class="nav-tema-dica">Próximo tema →</span><span class="nav-tema-nome">03 · Acessibilidade</span></a>
+        </nav>
+    </main>
+    <footer class="rodape"><a href="#" class="btn-creditos">Créditos</a><p>Atividade IHC<br>2026</p></footer>
+    <script src="script.js"></script>
+    <script src="ux.js"></script>
+</body>
+</html>
