@@ -306,8 +306,19 @@
     }
 
     /* Chamada final */
-    .chamada {
+        .chamada {
         width: calc(100% - 50px);
     }
 
+}
+
+/* Melhorias de interação */
+.tema-cartao,
+.aplica-cartao {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tema-cartao:hover,
+.aplica-cartao:hover {
+    transform: translateY(-4px);
 }
