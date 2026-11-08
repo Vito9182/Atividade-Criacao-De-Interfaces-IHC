@@ -1,0 +1,239 @@
+
+/* ========================================
+   RESPONSIVIDADE - PROJETO IHC
+   Responsável: Henrique
+   ======================================== */
+
+
+/* ========================================
+   CELULARES - ATÉ 480px
+   ======================================== */
+
+@media (max-width: 480px) {
+
+    /* Cabeçalho */
+    .cabecalho {
+        height: 80px;
+        padding: 0 16px;
+    }
+
+    .logo-icone {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-grande {
+        font-size: 1.1rem;
+    }
+
+    .logo-pequeno {
+        font-size: 0.6rem;
+        letter-spacing: 2px;
+    }
+
+    /* Botão e menu */
+    .botao-menu {
+        width: 46px;
+        height: 46px;
+        top: 14px;
+        right: 14px;
+    }
+
+    .menu-lista {
+        top: 14px;
+        right: 14px;
+        left: 14px;
+        width: auto;
+        height: auto;
+        min-height: 56px;
+        padding: 65px 12px 12px;
+        border-radius: 16px;
+    }
+
+    .menu-lista ul {
+        width: 100%;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .menu-lista ul a {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    /* Abertura */
+    .inicio {
+        padding-bottom: 48px;
+    }
+
+    .inicio-conteudo {
+        padding: 30px 18px 0;
+        gap: 30px;
+    }
+
+    .inicio-texto {
+        flex: 1 1 100%;
+        gap: 16px;
+    }
+
+    .inicio-titulo {
+        font-size: 2rem;
+    }
+
+    .inicio-descricao {
+        font-size: 1rem;
+    }
+
+    .botao-principal {
+        padding: 12px 22px;
+        font-size: 0.85rem;
+    }
+
+    /* Cartões do início */
+    .tema-cartoes {
+        flex: 1 1 100%;
+        gap: 12px;
+    }
+
+    .tema-cartao {
+        padding: 16px;
+    }
+
+    .tema-cartao img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .tema-cartao p {
+        font-size: 0.85rem;
+    }
+
+    .tema-cartao:nth-child(n) {
+        margin-top: 0;
+        transform: none;
+    }
+
+    /* Faixa de informações */
+    .faixa {
+        margin-top: -20px;
+        padding: 12px;
+        gap: 8px 14px;
+        font-size: 0.75rem;
+        letter-spacing: 1px;
+    }
+
+    /* Jornada */
+    .jornada {
+        width: calc(100% - 24px);
+        margin: 45px auto;
+        gap: 14px;
+    }
+
+    .jornada-topo h2,
+    .conexao h2,
+    .aplica h2 {
+        font-size: 1.5rem;
+    }
+
+    /* Cartões dos temas */
+    .passo {
+        padding: 18px;
+        gap: 14px;
+    }
+
+    .passo-numero {
+        font-size: 2.8rem;
+    }
+
+    .passo-imagem {
+        flex: 1 1 100%;
+        width: 100%;
+        height: 160px;
+    }
+
+    .passo-texto {
+        flex: 1 1 100%;
+    }
+
+    .passo-texto h3 {
+        font-size: 1.2rem;
+    }
+
+    .passo-texto p {
+        font-size: 0.9rem;
+    }
+
+    .passo-seta {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    /* Conexão entre os temas */
+    .conexao {
+        width: calc(100% - 24px);
+        padding: 22px;
+        margin-bottom: 50px;
+        gap: 20px;
+    }
+
+    .perguntas {
+        grid-template-columns: 1fr;
+    }
+
+    .pergunta {
+        padding: 14px;
+    }
+
+    /* Aplicação no site */
+    .aplica {
+        width: calc(100% - 24px);
+        margin-bottom: 50px;
+    }
+
+    .aplica-grade {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .aplica-cartao {
+        padding: 18px;
+    }
+
+    /* Chamada final */
+    .chamada {
+        width: calc(100% - 24px);
+        padding: 30px 18px;
+        margin-bottom: 50px;
+    }
+
+    .chamada h2 {
+        font-size: 1.5rem;
+    }
+
+    .chamada p {
+        font-size: 0.95rem;
+    }
+
+    .chamada a {
+        padding: 12px 20px;
+        font-size: 0.85rem;
+    }
+
+    /* Rodapé */
+    .rodape {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 14px;
+        padding: 20px;
+    }
+
+    .btn-creditos {
+        justify-self: center;
+    }
+
+    .rodape p {
+        font-size: 1rem;
+    }
+
+}
