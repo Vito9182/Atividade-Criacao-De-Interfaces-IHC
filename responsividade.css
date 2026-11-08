@@ -237,3 +237,77 @@
     }
 
 }
+/* ========================================
+   TABLETS - 481px ATÉ 768px
+   ======================================== */
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+    /* Cabeçalho */
+    .cabecalho {
+        padding: 0 25px;
+    }
+
+    /* Abertura */
+    .inicio-conteudo {
+        padding: 45px 30px;
+        gap: 30px;
+    }
+
+    .inicio-titulo {
+        font-size: 2.8rem;
+    }
+
+    .inicio-descricao {
+        font-size: 1.05rem;
+    }
+
+    /* Cartões do início */
+    .tema-cartoes {
+        gap: 14px;
+    }
+
+    .tema-cartao {
+        padding: 18px;
+    }
+
+    /* Jornada */
+    .jornada {
+        width: calc(100% - 50px);
+    }
+
+    .passo {
+        padding: 22px;
+        gap: 18px;
+    }
+
+    .passo-imagem {
+        width: 180px;
+        height: 140px;
+    }
+
+    /* Conexão */
+    .conexao {
+        width: calc(100% - 50px);
+        padding: 30px;
+    }
+
+    .perguntas {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Aplicação */
+    .aplica {
+        width: calc(100% - 50px);
+    }
+
+    .aplica-grade {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Chamada final */
+    .chamada {
+        width: calc(100% - 50px);
+    }
+
+}
