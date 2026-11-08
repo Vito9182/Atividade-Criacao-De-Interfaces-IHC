@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acessibilidade | Criação de Interfaces</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="usabilidade.css">
+    <link rel="stylesheet" href="acessibilidade.css">
+</head>
+<body>
+    <button class="botao-menu" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-lista">
+        <span></span><span></span><span></span>
+    </button>
+    <nav class="menu-lista" id="menu-lista" aria-label="Menu principal">
+        <ul>
+            <li><a href="index.html"><span>00</span>Início</a></li>
+            <li><a href="usabilidade.html"><span>01</span>Usabilidade</a></li>
+            <li><a href="ux.html"><span>02</span>Experiência do Usuário</a></li>
+            <li><a href="acessibilidade.html" aria-current="page"><span>03</span>Acessibilidade</a></li>
+            <li><a href="responsividade.html"><span>04</span>Responsividade</a></li>
+        </ul>
+    </nav>
+    <div class="menu-fundo"></div>
+
+    <section class="inicio">
+        <header class="cabecalho">
+            <a href="index.html" class="logo">
+                <span class="logo-icone" aria-hidden="true">IHC</span>
+                <span class="logo-texto"><span class="logo-pequeno">Criação de</span><span class="logo-grande">Interfaces</span></span>
+            </a>
+        </header>
+        <div class="inicio-conteudo">
+            <div class="tema-texto">
+                <nav class="caminho" aria-label="Caminho"><a href="index.html">Início</a> <span aria-hidden="true">›</span> Acessibilidade</nav>
+                <div class="tema-titulo"><span class="tema-numero" aria-hidden="true">03</span><h1>Acessibilidade</h1></div>
+                <p class="tema-descricao">Acessibilidade é criar interfaces que possam ser percebidas, entendidas e usadas por todas as pessoas, com diferentes corpos, sentidos e formas de navegar.</p>
+                <div class="etiquetas"><span class="etiqueta">Incluir</span><span class="etiqueta">Perceber</span><span class="etiqueta">Participar</span></div>
+            </div>
+            <div class="acessibilidade-hero" role="img" aria-label="Símbolos representando diferentes formas de interação">
+                <span class="acesso-simbolo">Aa</span><span class="acesso-simbolo">◉</span><span class="acesso-simbolo">⌨</span><span class="acesso-simbolo">▶</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="conteudo">
+        <section class="secao">
+            <h2>Uma interface para todas as pessoas</h2>
+            <p class="secao-intro">A acessibilidade faz parte do projeto desde o começo. Abra os cartões para ver atitudes práticas.</p>
+            <div class="heuristicas acesso-principios">
+                <details class="heuristica" open><summary><span class="numero">1</span>Perceptível</summary><p>Oferecer texto alternativo, legendas, contraste adequado e mais de uma forma de perceber uma informação.</p></details>
+                <details class="heuristica"><summary><span class="numero">2</span>Operável</summary><p>Permitir que tudo funcione pelo teclado, sem depender apenas de mouse, toque ou movimentos precisos.</p></details>
+                <details class="heuristica"><summary><span class="numero">3</span>Compreensível</summary><p>Usar linguagem clara, navegação previsível e mensagens que ajudem a corrigir erros.</p></details>
+                <details class="heuristica"><summary><span class="numero">4</span>Compatível</summary><p>Construir com HTML semântico para funcionar com leitores de tela, navegadores e tecnologias assistivas.</p></details>
+                <details class="heuristica"><summary><span class="numero">5</span>Contraste</summary><p>Garantir que textos e controles possam ser identificados mesmo por quem tem baixa visão ou está em uma tela com pouco brilho.</p></details>
+                <details class="heuristica"><summary><span class="numero">6</span>Respeito</summary><p>Não usar acessibilidade como barreira: dar tempo, escolha e controle para cada pessoa concluir sua tarefa.</p></details>
+            </div>
+        </section>
+
+        <section class="destaque">
+            <p class="destaque-frase">Acessibilidade não é um recurso extra. É uma condição para participar.</p>
+            <p class="destaque-fonte">Quando removemos barreiras, mais pessoas conseguem fazer parte da experiência.</p>
+        </section>
+
+        <section class="acesso-checklist" aria-labelledby="checklist-titulo">
+            <div>
+                <p class="selo">Na prática</p>
+                <h2 id="checklist-titulo">Pequenas escolhas, grandes diferenças</h2>
+                <p>Antes de publicar uma interface, observe se cada pessoa tem um caminho possível para encontrar informação e realizar sua tarefa.</p>
+            </div>
+            <ul>
+                <li><span aria-hidden="true">✓</span> Foco visível ao navegar pelo teclado</li>
+                <li><span aria-hidden="true">✓</span> Botões com nomes que explicam sua ação</li>
+                <li><span aria-hidden="true">✓</span> Imagens importantes com descrição</li>
+                <li><span aria-hidden="true">✓</span> Vídeos com legendas e controles claros</li>
+            </ul>
+        </section>
+
+        <section class="exemplos">
+            <div class="exemplo">
+                <div class="exemplo-imagem acesso-exemplo acesso-positivo"><span>Buscar produto</span><strong>⌕  Pesquisar</strong><small>Tab: navegar · Enter: selecionar</small></div>
+                <h3>Interface inclusiva</h3>
+                <ul><li>O campo tem um nome claro <span>(semântica)</span></li><li>O foco mostra onde a pessoa está <span>(teclado)</span></li><li>A instrução explica como interagir <span>(clareza)</span></li></ul>
+            </div>
+            <div class="exemplo exemplo-ruim">
+                <div class="exemplo-imagem acesso-exemplo acesso-negativo"><span>🔍</span><strong>clique no ícone</strong><small>Sem descrição · sem foco visível</small></div>
+                <h3>Barreiras desnecessárias</h3>
+                <ul><li>Ícone sem nome acessível <span>(leitor de tela)</span></li><li>A ação depende do mouse <span>(navegação)</span></li><li>Não há orientação para continuar <span>(compreensão)</span></li></ul>
+            </div>
+        </section>
+
+        <section class="quiz">
+            <p class="quiz-contador">Teste rápido · <span id="quiz-numero">1</span> de 3</p>
+            <h2 class="quiz-pergunta" id="quiz-pergunta"></h2>
+            <div class="quiz-opcoes" id="quiz-opcoes"></div>
+            <p class="quiz-resposta" id="quiz-resposta" aria-live="polite"></p>
+            <button class="quiz-proxima" id="quiz-proxima" hidden>Próxima →</button>
+        </section>
+
+        <nav class="navegacao-temas" aria-label="Navegar entre temas">
+            <a href="ux.html" class="nav-tema"><span class="nav-tema-dica">← Tema anterior</span><span class="nav-tema-nome">02 · Experiência do Usuário</span></a>
+            <a href="responsividade.html" class="nav-tema nav-proximo"><span class="nav-tema-dica">Próximo tema →</span><span class="nav-tema-nome">04 · Responsividade</span></a>
+        </nav>
+    </main>
+    <footer class="rodape"><a href="#" class="btn-creditos">Créditos</a><p>Atividade IHC<br>2026</p></footer>
+    <script src="script.js"></script>
+    <script src="acessibilidade.js"></script>
+</body>
+</html>

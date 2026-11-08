@@ -430,21 +430,3 @@
 .conteudo {
     margin-top: 0;
 }
-
-/*------------------------------------*/
-
-.faixa a {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
-.faixa a:hover {
-    color: #4cc9f0;
-}
-
-.secao,
-.exemplos,
-.quiz {
-    scroll-margin-top: 40px;
-}

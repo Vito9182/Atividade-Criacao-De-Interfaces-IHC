@@ -1,0 +1,55 @@
+.acessibilidade-hero {
+    flex: 1 1 320px;
+    min-width: 280px;
+    height: 260px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+    padding: 38px;
+    align-items: center;
+    justify-items: center;
+    border: 1px solid rgba(76, 201, 240, .6);
+    border-radius: 16px;
+    background: linear-gradient(145deg, rgba(106, 95, 209, .75), rgba(42, 33, 112, .9));
+    box-shadow: 0 16px 36px rgba(0, 0, 0, .4);
+    transform: rotate(2deg);
+}
+.acesso-simbolo {
+    width: 82px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0b1636;
+    background: #4cc9f0;
+    border-radius: 12px;
+    font: 800 1.8rem Poppins, sans-serif;
+}
+.acesso-simbolo:nth-child(2) { background: #fff; }
+.acesso-simbolo:nth-child(3) { color: #fff; background: #6a5fd1; border: 1px solid #c9c3ff; }
+.acesso-simbolo:nth-child(4) { color: #fff; background: transparent; border: 1px solid #4cc9f0; }
+.acesso-checklist {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 30px;
+    padding: 28px;
+    background: #3b2f8f;
+    border: 1px solid rgba(76, 201, 240, .5);
+    border-radius: 12px;
+}
+.acesso-checklist h2 { margin: 4px 0 10px; }
+.acesso-checklist p { color: #e4e1ff; line-height: 1.6; }
+.selo { color: #4cc9f0 !important; text-transform: uppercase; letter-spacing: 2px; font-size: .8rem; }
+.acesso-checklist ul { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; list-style: none; }
+.acesso-checklist li { padding: 18px 14px; color: #e4e1ff; background: #2a2170; border-radius: 10px; line-height: 1.4; }
+.acesso-checklist li span { margin-right: 6px; color: #4cc9f0; font-weight: 800; }
+.acesso-exemplo { min-height: 170px; padding: 22px; display: flex; flex-direction: column; justify-content: center; gap: 10px; border-radius: 8px; }
+.acesso-exemplo strong { font: 1.2rem Poppins, sans-serif; }
+.acesso-exemplo small { font-size: .85rem; }
+.acesso-positivo { color: #0b1636; background: linear-gradient(145deg, #c9f3ff, #4cc9f0); }
+.acesso-negativo { color: #fff; background: linear-gradient(145deg, #7d273d, #30152f); }
+.acesso-negativo small { color: #ffc6d1; }
+@media (max-width: 760px) {
+    .acessibilidade-hero { transform: none; }
+    .acesso-checklist { grid-template-columns: 1fr; }
+}
